@@ -1,7 +1,14 @@
 import React from 'react';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import './Page.css'
 export default function Home() {
+    const link = ({ isActive }) => {
+        return {
+            color: '#FFFFFF',
+            textDecoration: 'underline',
+            fontWeight: 'none',
+        }
+    }
     return (
         <div className="gradient_background">
            <div className="title">
@@ -11,13 +18,15 @@ export default function Home() {
                 <p> TRAILER EDITOR </p>
             </div>
             <div className="sec">
-                <Link to="/About">
+                <NavLink style={link} to="/ProfessionalWork">
                     <p>Professional Work</p>
-                </Link>
-                
-                <p>Solo Projects</p>
-                <p>About/Contact</p>
-                
+                </NavLink>
+                <NavLink style={link} to="/SoloWork" >
+                    <p>Solo Projects</p>
+                </NavLink>
+                <NavLink style={link} to="/About" >
+                    <p>About/Contact</p>
+                </NavLink>
             </div>
         </div>
     );
