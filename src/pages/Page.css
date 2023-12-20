@@ -1,6 +1,11 @@
 .gradient_background {
     background: linear-gradient(90deg, #010101, #161616);
-    height: 100vh;
+    height: 100vw;
+    width: 99vw;
+}
+.gradient_background_projects {
+    background: linear-gradient(90deg, #010101, #161616);
+    height: fit-content;
     width: 99vw;
 }
 body {
@@ -95,10 +100,18 @@ body {
     color: #f3f1f1;
     position: relative;
     text-align: left;
-
 }
 
 .sec {
     text-align: center;
     color: white;
 }
+
+.link{
+    color: #FFFFFF
+}
+.link:hover{
+    color: #f5ebeb;
+    transform: scale(1.2)
+}
+
