@@ -1,7 +1,7 @@
 import React from 'react';
-
+import NavBar from '../components/NavBar.tsx';
 import { Grid, Container } from '@mui/material';
-import VideoBox from 'C:/Users/gavdog/VSC/ColtonWebsite/src/components/VideoFile.tsx';
+import VideoBox from '../components/VideoFile.tsx';
 import './Page.css';
 
 export default function Professional() {
@@ -34,6 +34,7 @@ export default function Professional() {
 
   return(
     <div className="gradient_background_projects">
+      <NavBar></NavBar>
         <div className="title">Professional Work</div>
         <br />
         <br />

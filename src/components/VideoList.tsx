@@ -1,6 +1,6 @@
 import React from "react";
 import VideoBox from "./VideoFile.tsx";
-import videos from "C:/Users/gavdog/VSC/ColtonWebsite/src/data/SoloVids.json"; 
+import videos from "../data/SoloVids.json"; 
 
 export default function VideoList() {
   
@@ -16,6 +16,6 @@ export default function VideoList() {
         />
       ))}
     </div>
-  ).props.children;
+  ).props.children.map(i=>i.props);
 }
 

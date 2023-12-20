@@ -1,12 +1,12 @@
 .gradient_background {
     background: linear-gradient(90deg, #010101, #161616);
-    height: 100vw;
-    width: 99vw;
+    height: 100vh;
+    width: 100vw;
 }
 .gradient_background_projects {
     background: linear-gradient(90deg, #010101, #161616);
     height: fit-content;
-    width: 99vw;
+    width: 100vw;
 }
 body {
     margin: 0;
@@ -78,12 +78,12 @@ body {
     text-align: center;
 }
 
-.box {
+.imgbox {
     border: 2px solid #fffefe;
     width: 450px; 
 }
 
-.box img {
+.imgbox img {
     width: 100%;
     height: auto; 
     object-fit: fill;
@@ -100,13 +100,17 @@ body {
     color: #f3f1f1;
     position: relative;
     text-align: left;
-}
 
+}
+@media only screen and (max-width: 1068px){
+    .text-group {
+        font-size: 17px;
+    }
+}
 .sec {
     text-align: center;
     color: white;
 }
-
 .link{
     color: #FFFFFF
 }
