@@ -1,0 +1,27 @@
+#topnav {
+    width: 100%;
+ 
+    position: fixed;
+    top: 0;
+    left: 0;
+ 
+    background: linear-gradient(90deg, #010101, #161616);
+ 
+    font-family: 'Segoe UI';
+    font-size: 15px;
+ }
+ 
+ .nav-link {
+    display: inline-block;
+    width: fit-content;
+    height: 55px;
+    padding-left: 20px;
+ 
+    color: White;
+ 
+    text-align: center;
+    line-height: 55px;
+ 
+    text-decoration: none;
+ }
+ 

@@ -1,13 +1,14 @@
 import React from 'react';
-
+import NavBar from '../components/NavBar.tsx';
 import './Page.css';
 
 export default function About() {
   return (
     <div className="gradient_background">
+      <NavBar></NavBar>
       <div className="wrapper">
         <div className="center-content">
-          <div className="box img">
+          <div className="imgbox img">
             <img src="/IMG_9676.jpg" alt="Colton Portrait" />
           </div>
         </div>
