@@ -13,7 +13,7 @@ div.arrowu {
     height: 1.5vmin;
     box-sizing: border-box;
     position: absolute;
-    left: 66%;
+    left: 69%;
     top: 24%;
     transform: rotate(-45deg);
     
@@ -53,18 +53,24 @@ div.arrowu {
       border-color: orange;
       transform: scale(.8);
     }
-    .text {
-        position: absolute;
-        left: -50%; /* Adjust the left position based on your design */
-        top: -30%; /* Adjust the top position based on your design */
-        color: white;
-        font-size: 16px; /* Adjust the font size based on your design */
-    }
+  }
+  .arrow-text {
+    pointer-events: none;
+    position: fixed;
+    font-family: 'Westmount';
+    transform: rotate(45deg);
+    font-size: 15px;
+    color: white;
+    left: -192px;
+    top: -67px;
+    margin-left: 80px;
+    text-align: left;
+    white-space: nowrap;
   }
   
   @media only screen and (max-width: 1068px){
     div.arrowu {
-        left: 85%;
+        left: 89%;
     }
 }
   
@@ -73,8 +79,8 @@ div.arrowu {
     height: 1.5vmin;
     box-sizing: border-box;
     position: absolute;
-    left: 70%; 
-    top: 23%;
+    left: 71.5%; 
+    top: 23.2%;
     transform: rotate(135deg);
   
     &::before {
@@ -116,7 +122,7 @@ div.arrowu {
   }
   @media only screen and (max-width: 1068px){
     div.arrowd {
-        left: 90%;
+        left: 93.5%;
     }
 }
 

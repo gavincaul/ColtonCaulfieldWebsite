@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import VideoList from './VideoList.tsx';
 import { VideoBoxProps } from "../interfaces/VideoBoxProps.tsx";
 import './Filter.css'
-import { Box } from '@mui/material'
 interface FilterProps {
     onFilterChange: (filteredVideos: VideoBoxProps[]) => void;
 }
@@ -36,14 +35,14 @@ export function Filter({ onFilterChange }: FilterProps): JSX.Element {
 
     return (
         <div>
-            <Box className="arrowBox">
-                <div className="text">Popularity</div>
-                <div className="arrowu" onClick={() => filterVideos(true, false)}></div>
+                <div className="arrowu" onClick={() => filterVideos(true, false)}>
+                    <div className="arrow-text">by Popularity</div>
+                </div>
                 <div className="arrowd" style={{/*Shift right 10px*/}} onClick={() => filterVideos(true, true)}></div>
-                <div className="text">Release</div>
-                <div className="arrowu" style={{ /*Shift right 10px*/ top: '27%'}} onClick={() => filterVideos(false, true)}></div>
-                <div className="arrowd" style={{top: '26%'}} onClick={() => filterVideos(false, false)}></div>
-            </Box>
+                <div className="arrowu" style={{ /*Shift right 10px*/ top: '27%'}} onClick={() => filterVideos(false, false)}>
+                    <div  className="arrow-text" style={{left: '-167px', top: '-56px'}}>by Release</div>
+                </div>
+                <div className="arrowd" style={{top: '26.2%'}} onClick={() => filterVideos(false, true)}></div>s
         </div>
     );
 }
