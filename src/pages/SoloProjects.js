@@ -1,7 +1,7 @@
 import { React, useState } from 'react';
 import VideoList from '../components/VideoList.tsx'
 import { Grid, Container } from '@mui/material';
-import VideoBox from '../components/VideoFile.tsx';
+import VideoFile from '../components/VideoFile.tsx';
 import { Filter } from '../components/Filter.tsx'
 import './Page.css';
 import NavBar from '../components/NavBar.tsx';
@@ -38,7 +38,7 @@ export default function Solo() {
           {videoGrid.map((row) =>
             row.map((vidData, idx) => (
               <Grid key={idx} item xs={12} sm={4}>
-                <VideoBox {...vidData} />
+                <VideoFile {...vidData} />
               </Grid>
             ))
           )}

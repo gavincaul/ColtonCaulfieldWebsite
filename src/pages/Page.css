@@ -100,7 +100,6 @@ body {
     color: #f3f1f1;
     position: relative;
     text-align: left;
-
 }
 @media only screen and (max-width: 1068px){
     .text-group {
@@ -118,4 +117,15 @@ body {
     color: #f5ebeb;
     transform: scale(1.2)
 }
-
+.videoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -69px;
+  }
+  
+  .videoWrapper iframe {
+    width: 50%;
+    height: 50%;
+  }
