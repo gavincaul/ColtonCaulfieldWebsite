@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import VideoList from './VideoList.tsx';
-import { VideoBoxProps } from "../interfaces/VideoBoxProps.tsx";
+import { VideoProps } from "../interfaces/VideoProps.tsx";
 import './Filter.css'
 interface FilterProps {
-    onFilterChange: (filteredVideos: VideoBoxProps[]) => void;
+    onFilterChange: (filteredVideos: VideoProps[]) => void;
 }
 
 export function Filter({ onFilterChange }: FilterProps): JSX.Element {
-    const [videos, setVideos] = useState<VideoBoxProps[]>(VideoList())
+    const [videos, setVideos] = useState<VideoProps[]>(VideoList())
 
 
 

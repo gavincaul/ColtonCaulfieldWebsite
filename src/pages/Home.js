@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from "react-router-dom"
+import { NavLink} from "react-router-dom"
 import './Page.css'
 export default function Home() {
     const link = ({ isActive }) => {

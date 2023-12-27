@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./VideoFile.css";
 import { Paper } from "@mui/material";
+import { useVideoContext } from './VideoContext.js';
 
-export default function VideoBox({
+export default function VideoFile({
     name,
     image,
     link,
@@ -15,6 +17,16 @@ export default function VideoBox({
     release: string;
     popularity: number;
   }) {
+    
+  const { setVideoLink } = useVideoContext();
+
+  let redirect = name;
+  redirect = redirect.replace(/\s+/g, '-');
+  const url = `/video/${redirect}`;
+
+  const handleVideoClick = () => {
+      setVideoLink(link);
+  };
   return (
     <div>
       <Paper
@@ -22,17 +34,17 @@ export default function VideoBox({
         className="video-paper"
         sx = {{padding: 1}}
         >
-            <a href={link} target="_blank" rel="noopener noreferrer" >
+            <Link to={url} state={{link}} style={{ textDecoration: 'none' }} onClick={handleVideoClick}>
                 <img
                     src={image}
                     alt={name}
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
-        </a>
+        </Link>
       </Paper>
       <div className="img-name">{name}</div>
     </div>
   );
 }
 
-export { VideoBox };
+export { VideoFile };

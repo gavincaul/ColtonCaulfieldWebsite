@@ -1,4 +1,4 @@
-export type VideoBoxProps = {
+export type VideoProps = {
     name: string;
     image: string;
     link: string;
