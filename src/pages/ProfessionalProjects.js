@@ -2,21 +2,11 @@ import React from 'react';
 import NavBar from '../components/NavBar.tsx';
 import { Grid, Container } from '@mui/material';
 import VideoBox from '../components/VideoFile.tsx';
+import videos from '../data/ProfessionalVids.json'
 import './Page.css';
 
 export default function Professional() {
-  const videoFiles = [
-    { name: 'Awesome Adventure', image: '/IMG_9677.jpg', link: '#', release: '2023-01-01', popularity: 80 },
-    { name: 'Fantastic Journey', image: '/IMG_9677.jpg', link: '#', release: '2023-02-15', popularity: 92 },
-    { name: 'Epic Exploration', image: '/IMG_9677.jpg', link: '#', release: '2023-03-21', popularity: 65 },
-    { name: 'Amazing Discovery', image: '/IMG_9677.jpg', link: '#', release: '2023-04-10', popularity: 87 },
-    { name: 'Cool Quest', image: '/IMG_9677.jpg', link: '#', release: '2023-05-05', popularity: 75 },
-    { name: 'Unbelievable Voyage', image: '/IMG_9677.jpg', link: '#', release: '2023-06-18', popularity: 89 },
-    { name: 'Incredible Expedition', image: '/IMG_9677.jpg', link: '#', release: '2023-07-30', popularity: 78 },
-    { name: 'Exciting Trek', image: '/IMG_9677.jpg', link: '#', release: '2023-08-22', popularity: 94 },
-    { name: 'Breathtaking Safari', image: '/IMG_9677.jpg', link: '#', release: '2023-09-14', popularity: 82 },
-    { name: 'Adventurous Safari', image: '/IMG_9677.jpg', link: '#', release: '2023-10-09', popularity: 88 },
-  ];
+  
 
   const arrayToGrid = (arr, elementsPerRow) => {
     const result = [];
@@ -26,7 +16,7 @@ export default function Professional() {
     return result;
   };
   
-  const videoGrid = arrayToGrid(videoFiles, 3);
+  const videoGrid = arrayToGrid([...videos], 3);
   
 
   
