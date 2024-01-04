@@ -40,10 +40,10 @@ export function Filter({ onFilterChange, currentPage }: FilterProps): JSX.Elemen
                     <div className="arrow-text">by Popularity</div>
                 </div>
                 <div className="arrowd" style={{/*Shift right 10px*/}} onClick={() => filterVideos(true, true)}></div>
-                <div className="arrowu" style={{ /*Shift right 10px*/ top: '27%'}} onClick={() => filterVideos(false, false)}>
-                    <div  className="arrow-text" style={{left: '-167px', top: '-56px'}}>by Release</div>
+                <div className="arrowu" style={{ /*Shift right 10px*/ top: '27.4%'}} onClick={() => filterVideos(false, false)}>
+                    <div  className="arrow-text" style={{left: '-182px', top: '-56px'}}>by Release</div>
                 </div>
-                <div className="arrowd" style={{top: '26.2%'}} onClick={() => filterVideos(false, true)}></div>s
+                <div className="arrowd" style={{top: '26.9%'}} onClick={() => filterVideos(false, true)}></div>s
         </div>
     );
 }

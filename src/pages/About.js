@@ -29,10 +29,9 @@ export default function About() {
          in the dissonance and chaos that others may perceive as challenging.
           In Colton's world, Aphex Twin's music isn't just a sound; it's a 
           captivating journey through the unexplored realms of sonic artistry.
-        
         </div>
       </div>
-      <div className="sec">CONTACT: COLTON.CAULFI@GMAIL.COM</div>
+      <div className="secab">CONTACT: COLTON.CAULFI@GMAIL.COM</div>
     </div>
   );
 };
