@@ -4,11 +4,12 @@ import { VideoProps } from "../interfaces/VideoProps.tsx";
 import './Filter.css'
 interface FilterProps {
     onFilterChange: (filteredVideos: VideoProps[]) => void;
+    currentPage: boolean;
 }
 
-export function Filter({ onFilterChange }: FilterProps): JSX.Element {
-    const [videos, setVideos] = useState<VideoProps[]>(VideoList())
+export function Filter({ onFilterChange, currentPage }: FilterProps): JSX.Element {
 
+    const [videos, setVideos] = useState<VideoProps[]>(() => VideoList({ page: currentPage }));
 
 
     function parseDate(dateString: string): Date {

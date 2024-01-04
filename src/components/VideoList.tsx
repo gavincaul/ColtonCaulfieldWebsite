@@ -1,9 +1,20 @@
 import React from "react";
 import VideoFile from "./VideoFile.tsx";
-import videos from "../data/SoloVids.json"; 
+import solovids from "../data/SoloVids.json"; 
+import profvids from "../data/ProfessionalVids.json"; 
 
-export default function VideoList() {
-  
+interface VideoListProps{
+    page: boolean;
+}
+
+export default function VideoList({page}: VideoListProps) {
+  let videos;
+  if (page){
+    videos = solovids;
+  }
+  else{
+    videos = profvids;
+  }
   return (
     <div>
       {videos.map((video) => (
