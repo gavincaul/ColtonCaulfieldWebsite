@@ -67,6 +67,13 @@ div.arrowu {
     text-align: left;
     white-space: nowrap;
   }
+  @media only screen and (max-width: 767px) {
+    .arrow-text{
+        font-size: 17px;
+        left: -210px;
+        top: -67px;
+    }
+}
   
   @media only screen and (max-width: 1068px){
     div.arrowu {
@@ -80,7 +87,7 @@ div.arrowu {
     box-sizing: border-box;
     position: absolute;
     left: 71.5%; 
-    top: 23.2%;
+    top: 23.6%;
     transform: rotate(135deg);
   
     &::before {
@@ -137,4 +144,12 @@ div.arrowu {
 .arrowBox{
     content: "Popularity";
     color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .arrowu,
+  .arrowd,
+  .arrow-text {
+    display: none;
+  }
 }

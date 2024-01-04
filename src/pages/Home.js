@@ -11,7 +11,7 @@ export default function Home() {
     }
     return (
         <div className="gradient_background">
-           <div className="title">
+           <div className="hometitle">
                 <p>COLTON CAULFIELD</p>
             </div> 
             <div className="trailer">
