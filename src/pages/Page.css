@@ -5,8 +5,8 @@
 }
 .gradient_background_projects {
     background: linear-gradient(90deg, #010101, #161616);
-    height: fit-content;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100v;
 }
 body {
     margin: 0;

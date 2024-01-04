@@ -1,13 +1,13 @@
-import React from 'react';
-import NavBar from '../components/NavBar.tsx';
+import { React, useState } from 'react';
+import VideoList from '../components/VideoList.tsx'
 import { Grid, Container } from '@mui/material';
-import VideoBox from '../components/VideoFile.tsx';
-import videos from '../data/ProfessionalVids.json'
+import VideoFile from '../components/VideoFile.tsx';
+import { Filter } from '../components/Filter.tsx'
 import './Page.css';
+import NavBar from '../components/NavBar.tsx';
 
 export default function Professional() {
-  
-
+  const [videos, setVideos] = useState(VideoList({ page: false }));
   const arrayToGrid = (arr, elementsPerRow) => {
     const result = [];
     for (let i = 0; i < arr.length; i += elementsPerRow) {
@@ -15,33 +15,35 @@ export default function Professional() {
     }
     return result;
   };
-  
+  const handleFilterChange = (filteredVideos) => {
+    setVideos(filteredVideos);
+  };
   const videoGrid = arrayToGrid([...videos], 3);
+
   
 
   
   
 
-  return(
+  return (
     <div className="gradient_background_projects">
       <NavBar></NavBar>
-        <div className="title">Professional Work</div>
-        <br />
-        <br />
-        <br />
-            <Container maxWidth='md' style={{ marginTop: 16 }}>
-                <Grid container spacing={3}>
-                    {videoGrid.map((row) =>
-                    row.map((vidData, idx) => (
-                        <Grid key={idx} item xs={12} sm={4}>
-                        <VideoBox {...vidData} />
-                        </Grid>
-                    ))
-                    )}
-                </Grid>
-            </Container>
-        <br></br>
-        <br></br>
+      <div className="title">Professional Work</div>
+      <br />
+      <br />
+      <Filter onFilterChange={handleFilterChange}></Filter>
+      <br />
+      <Container maxWidth="md" style={{ marginTop: 16 }}>
+        <Grid container spacing={3}>
+          {videoGrid.map((row) =>
+            row.map((vidData, idx) => (
+              <Grid key={idx} item xs={12} sm={4}>
+                <VideoFile {...vidData} />
+              </Grid>
+            ))
+          )}
+        </Grid>
+      </Container>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import './Page.css';
 import NavBar from '../components/NavBar.tsx';
 
 export default function Solo() {
-  const [videos, setVideos] = useState(VideoList())
+  const [videos, setVideos] = useState(VideoList({ page: true }));
   const arrayToGrid = (arr, elementsPerRow) => {
     const result = [];
     for (let i = 0; i < arr.length; i += elementsPerRow) {
