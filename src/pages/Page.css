@@ -24,6 +24,14 @@ body {
     padding-top: 7rem;
     padding-bottom: 0rem;
 }
+@media only screen and (max-width: 767px) {
+    .title{
+        font-size: 45px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 3rem;
+    }
+}
 .trailer{
     font-family: 'Westmount', Westmount;
     font-size: 41px;
@@ -36,6 +44,12 @@ body {
     text-align: center;
     padding-bottom: 6rem;
 }
+@media only screen and (max-width: 767px) {
+    .trailer{
+        font-size: 29px;
+        margin-top: -2rem;
+    }
+}
 
 .trailer::before {
     content: " ";
@@ -46,6 +60,11 @@ body {
     top: 18%;
     left: 0;
     background: #dbdbdb;
+}
+@media only screen and (max-width: 767px) {
+    .trailer::before{
+        height:0px;
+    }
 }
   
 .trailer::after {
@@ -58,6 +77,11 @@ body {
     right: 0;
     background: #f3f1f1;
     
+}
+@media only screen and (max-width: 767px) {
+    .trailer::after{
+        height:0px;
+    }
 }
 
 .sec{
@@ -111,11 +135,7 @@ body {
     color: white;
 }
 .link{
-    color: #FFFFFF
-}
-.link:hover{
-    color: #f5ebeb;
-    transform: scale(1.2)
+    color: #FFFFFF;
 }
 .videoWrapper {
     display: flex;
