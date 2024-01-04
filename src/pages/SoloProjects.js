@@ -31,7 +31,7 @@ export default function Solo() {
       <div className="title">Solo Work</div>
       <br />
       <br />
-      <Filter onFilterChange={handleFilterChange}></Filter>
+      <Filter onFilterChange={handleFilterChange} currentPage={true}></Filter>
       <br />
       <Container maxWidth="md" style={{ marginTop: 16 }}>
         <Grid container spacing={3}>
