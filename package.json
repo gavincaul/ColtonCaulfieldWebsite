@@ -1,7 +1,7 @@
 {
   "name": "colton-app",
   "version": "0.1.0",
-  "homepage": "https://www.itemaxpictures.com",
+  "homepage": "https://www.coltoncaulfield.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
