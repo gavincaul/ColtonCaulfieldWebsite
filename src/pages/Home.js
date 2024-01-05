@@ -18,11 +18,11 @@ export default function Home() {
                 <p> TRAILER EDITOR </p>
             </div>
             <div className="sec">
-                <NavLink style={link} to="/ProfessionalWork">
-                    <p>Professional Work</p>
-                </NavLink>
                 <NavLink style={link} to="/SoloWork" >
                     <p>Solo Projects</p>
+                </NavLink>
+                <NavLink style={link} to="/ProfessionalWork">
+                    <p>Professional Work</p>
                 </NavLink>
                 <NavLink style={link} to="/About" >
                     <p>About/Contact</p>
