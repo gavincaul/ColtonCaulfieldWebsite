@@ -3,12 +3,12 @@
 > react-scripts test --coverage
 
 PASS src/App.test.js
-  ✓ renders learn react link (38 ms)
+  ✓ renders learn react link (36 ms)
 
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 --------------------------|---------|----------|---------|---------|-------------------
-All files                 |    5.55 |        0 |    7.69 |    5.74 |                   
+All files                 |    5.95 |        0 |     8.1 |    6.17 |                   
  src                      |    8.33 |        0 |   33.33 |    8.33 |                   
   App.js                  |     100 |      100 |     100 |     100 |                   
   index.js                |       0 |      100 |     100 |       0 | 9-21              
@@ -21,15 +21,15 @@ All files                 |    5.55 |        0 |    7.69 |    5.74 |
   VideoList.tsx           |       0 |        0 |       0 |       0 | 12-30             
  src/interfaces           |       0 |        0 |       0 |       0 |                   
   VideoProps.tsx          |       0 |        0 |       0 |       0 |                   
- src/pages                |     8.1 |        0 |   13.33 |    8.57 |                   
+ src/pages                |    9.67 |        0 |   15.38 |   10.34 |                   
   About.js                |       0 |      100 |       0 |       0 | 6                 
   Home.js                 |     100 |      100 |     100 |     100 |                   
-  ProfessionalProjects.js |       0 |      100 |       0 |       0 | 10-40             
-  SoloProjects.js         |       0 |      100 |       0 |       0 | 10-40             
+  ProfessionalProjects.js |       0 |      100 |       0 |       0 | 11-40             
+  SoloProjects.js         |       0 |      100 |       0 |       0 | 11-40             
   VideoPlayer.js          |       0 |        0 |       0 |       0 | 7-15              
 --------------------------|---------|----------|---------|---------|-------------------
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.506 s
+Time:        3.353 s
 Ran all test suites.
