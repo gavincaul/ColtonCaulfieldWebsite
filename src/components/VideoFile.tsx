@@ -32,7 +32,7 @@ export default function VideoFile({
       <Paper
         elevation={3}
         className="video-paper"
-        sx = {{padding: 1}}
+        sx = {{padding: 0.5, height: 204, width: 200}}
         >
             <Link to={url} state={{link}} style={{ textDecoration: 'none' }} onClick={handleVideoClick}>
                 <img

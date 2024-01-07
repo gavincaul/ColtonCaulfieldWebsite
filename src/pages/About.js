@@ -9,26 +9,16 @@ export default function About() {
       <div className="wrapper">
         <div className="center-content">
           <div className="imgbox img">
-            <img src="/IMG_9676.jpg" alt="Colton Portrait" />
+            <img src="/ColtonPortrait.jpg" alt="Colton Portrait" />
           </div>
         </div>
         <div className="text-group">
-        Meet Colton, an individual whose 
-        passion for music is insufferably exorbitant, 
-        centered around a unique taste that many might consider unusual. 
-        Colton's heart beats in sync with the intricate electronic sounds
-         and avant-garde compositions of Aphex Twin, an artist known for 
-         pushing the boundaries of conventional music. While others may 
-         scratch their heads at the unconventional beats and experimental 
-         melodies, Colton ardently defends Aphex Twin's work as a musical 
-         genius. Passionate to the point of exuberance, Colton enthusiastically 
-         shares the intricate nuances of Aphex Twin's discography, often 
-         leaving friends bewildered by the complex and abstract sonic 
-         landscapes. Unfazed by the raised eyebrows, Colton stands proudly as 
-         a fervent advocate for the electronic avant-garde, finding beauty 
-         in the dissonance and chaos that others may perceive as challenging.
-          In Colton's world, Aphex Twin's music isn't just a sound; it's a 
-          captivating journey through the unexplored realms of sonic artistry.
+        Colton Caulfield is a trailer and pitch sizzle editor who has cut for independent filmmakers such as Academy Award-Winning 
+        filmmaker Dorothy Fadiman, as well as larger advertising companies such as Wheelhouse Creative, Stage Six Media, Village 
+        Roadshow, NEON Rated. Whether it be trailers, sizzles, reels, or roundtables, Colton understands that editing is an art 
+        form that requires delving into the essence of the client's vision and transforming it into an edit that's not only visually 
+        exciting but also holds gripping narrative. <br></br> <br></br>
+        From conceptualization to realization, Colton is committed and excited to bring your story to life.
         </div>
       </div>
       <div className="secab">CONTACT: COLTON.CAULFI@GMAIL.COM</div>
