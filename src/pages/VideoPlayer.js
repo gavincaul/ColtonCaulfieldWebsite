@@ -24,7 +24,8 @@ export default function VideoPlayer(){
                             title="YouTube Video"
                             width="100%"
                             height="100%"
-                            src={`https://www.youtube.com/embed/${videoId}`}
+                            allow='autoplay'
+                            src={`https://www.youtube.com/embed/${videoId}?&autoplay=1&mute=0`}
                             frameBorder="1"
                             allowFullScreen
                         ></iframe>
