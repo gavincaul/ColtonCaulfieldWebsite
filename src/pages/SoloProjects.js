@@ -28,7 +28,7 @@ export default function Solo() {
   return (
     <div className="gradient_background_projects">
       <NavBar></NavBar>
-      <div className="title">Solo Work</div>
+      <div className="title">Solo Projects</div>
       <br />
       <br />
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
