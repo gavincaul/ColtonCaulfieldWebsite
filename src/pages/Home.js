@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink} from "react-router-dom"
-import './Page.css'
+import './Home.css'
 export default function Home() {
     const link = ({ isActive }) => {
         return {

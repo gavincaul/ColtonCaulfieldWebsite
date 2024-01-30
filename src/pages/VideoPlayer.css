@@ -1,0 +1,27 @@
+.gradient_background {
+    background: linear-gradient(90deg, #010101, #161616);
+    min-height: 100vh;
+    min-width: 100v;
+}
+.videoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -69px;
+  }
+  
+  
+  .videoWrapper iframe {
+    width: 50%;
+    height: 50%;
+  }
+  @media only screen and (max-width: 767px) {
+    .videoWrapper {
+        margin-top: 50%;
+        max-width: 100%; 
+        width: auto; 
+        height: auto; 
+        padding-bottom: 0; 
+    }
+  }

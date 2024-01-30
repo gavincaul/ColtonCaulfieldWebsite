@@ -7,7 +7,7 @@
 
     font-family: 'Segoe UI';
     font-size: 15px;
-    max-width: 200px;
+    max-width: 205px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -15,6 +15,13 @@
     position: relative;
     text-align: left;
   }
+  @media only screen and (max-width: 667px) {
+    .img-name{
+        max-width: 103px;
+        font-size: 11px;
+    }
+}
+  
   .video-paper {
     padding: 16px;
     text-align: center;
@@ -22,6 +29,19 @@
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
   }
-    .video-paper:hover {
-      transform: scale(1.03);
+  @media (max-width: 720px){
+    .video-paper{
+      width: 48%;
+      margin: 0 1%;
+      margin-bottom: 16px;
     }
+    .video-paper:nth-child(2n){
+      margin-right: 2%;
+    }
+    .img-name {
+      margin-top: 8px;
+    }
+  }
+  .video-paper:hover {
+    transform: scale(1.03);
+  }

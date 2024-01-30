@@ -1,0 +1,33 @@
+.gradient_background_projects {
+    background: linear-gradient(90deg, #010101, #161616);
+    min-height: 100vh;
+    min-width: 100v;
+}
+.title {
+    font-family: 'Harmony', harmony;
+    font-size: 52px;
+    letter-spacing: 12px;
+    margin-bottom: 20px;
+    color: #f3f1f1;
+    text-align: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 7rem;
+    padding-bottom: 0rem;
+}
+@media only screen and (max-width: 767px) {
+    .title{
+        font-size: 38px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 5rem;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .title{
+        font-size: 29px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 5rem;
+    }
+}
