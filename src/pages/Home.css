@@ -1,0 +1,105 @@
+.gradient_background {
+    background: linear-gradient(90deg, #010101, #161616);
+    min-height: 100vh;
+    min-width: 100v;
+}
+.hometitle {
+    font-family: 'Harmony', harmony;
+    font-size: 52px;
+    letter-spacing: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f3f1f1;
+    text-align: center;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 7rem;
+    padding-bottom: 0rem;
+}
+@media only screen and (max-width: 767px) {
+    .hometitle{
+        font-size: 45px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 3rem;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .hometitle{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 3rem;
+        font-size: 39px;
+    }
+}
+
+.trailer{
+    font-family: 'Westmount', Westmount;
+    font-size: 41px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #f3f1f1;
+    position: relative;
+    max-width: 700px;
+    margin: 1px auto;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+@media only screen and (max-width: 767px) {
+    .trailer{
+        font-size: 29px;
+        margin-top: -2rem;
+    }
+}
+
+.trailer::before {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 130px;
+    position: absolute;
+    top: 18%;
+    left: 0;
+    background: #dbdbdb;
+}
+@media only screen and (max-width: 767px) {
+    .trailer::before{
+        height:0px;
+    }
+}
+  
+.trailer::after {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 130px;
+    position: absolute;
+    top: 18%;
+    right: 0;
+    background: #f3f1f1;
+    
+}
+@media only screen and (max-width: 767px) {
+    .trailer::after{
+        height:0px;
+    }
+}
+
+.sec{
+    font-family: 'MagnumSans', magnumsans;
+    font-size: 36px;
+    letter-spacing: 7px;
+    margin-bottom: 20px;
+    color: #f7f4f4;
+    text-align: center;
+}
+@media only screen and (max-width: 1068px){
+    .sec {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 667px) {
+    .sec{
+        font-size: 20px;
+    }
+}

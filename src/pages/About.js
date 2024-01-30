@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../components/NavBar.tsx';
-import './Page.css';
+import './About.css';
 
 export default function About() {
   return (
@@ -22,6 +22,7 @@ export default function About() {
         </div>
       </div>
       <div className="secab">CONTACT: COLTON.CAULFI@GMAIL.COM</div>
+      <div className="gavin" href="gavcaul@udel.edu">Site made by Gavin Caulfield</div>
     </div>
   );
 };
