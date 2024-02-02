@@ -22,7 +22,9 @@ export default function About() {
         </div>
       </div>
       <div className="secab">CONTACT: COLTON.CAULFI@GMAIL.COM</div>
-      <div className="gavin" href="gavcaul@udel.edu">Site made by Gavin Caulfield</div>
+      <div className="gavin" onClick={() => { window.location.href = 'mailto:gavindcaulfield@gmail.com'; }}>
+        Site made by Gavin Caulfield
+      </div>
     </div>
   );
 };
