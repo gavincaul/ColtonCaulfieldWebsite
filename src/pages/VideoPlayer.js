@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../components/NavBar.tsx';
 import { useVideoContext } from '../components/VideoContext';
-import './Page.css'
+import './VideoPlayer.css'
 
 export default function VideoPlayer(){
     const { selectedVideoLink } = useVideoContext();
@@ -11,7 +11,7 @@ export default function VideoPlayer(){
     };
 
     const videoId = extractVideoId(selectedVideoLink);
-    console.log(videoId);
+    
     return (
         <div className="gradient_background">
             <NavBar></NavBar>

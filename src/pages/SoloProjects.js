@@ -3,7 +3,7 @@ import VideoList from '../components/VideoList.tsx'
 import { Grid, Container } from '@mui/material';
 import VideoFile from '../components/VideoFile.tsx';
 /*import { Filter } from '../components/Filter.tsx'*/
-import './Page.css';
+import './Projects.css';
 import NavBar from '../components/NavBar.tsx';
 
 export default function Solo() {
@@ -28,7 +28,7 @@ export default function Solo() {
   return (
     <div className="gradient_background_projects">
       <NavBar></NavBar>
-      <div className="title">Solo Work</div>
+      <div className="title">Solo Projects</div>
       <br />
       <br />
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}

@@ -3,7 +3,7 @@ import VideoList from '../components/VideoList.tsx'
 import { Grid, Container } from '@mui/material';
 import VideoFile from '../components/VideoFile.tsx';
 /*import { Filter } from '../components/Filter.tsx'*/
-import './Page.css';
+import './Projects.css';
 import NavBar from '../components/NavBar.tsx';
 
 export default function Professional() {
@@ -16,7 +16,7 @@ export default function Professional() {
     return result;
   };
   /*const handleFilterChange = (filteredVideos) => {
-    setVideos(filteredVideos);
+    setVideos(filteredVideos)
   };*/
   const videoGrid = arrayToGrid(VideoList({ page: false }), 3);
 
@@ -34,7 +34,11 @@ export default function Professional() {
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
       <br />
       <Container maxWidth="md" style={{ marginTop: 16}}>
+<<<<<<< HEAD
         <Grid container spacing={3} >
+=======
+        <Grid container spacing={0.5} style={{ marginRight: 'auto', marginLeft: 'auto'}}>
+>>>>>>> 265dd85ea92853e396766af824b248d45b90eb5c
           {videoGrid.map((row) =>
             row.map((vidData, idx) => (
               <Grid key={idx} item xs={12} sm={4}  >
