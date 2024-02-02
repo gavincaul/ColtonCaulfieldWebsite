@@ -57,7 +57,7 @@ export default function VideoFile({
                 />
         </Link>
       </Paper> 
-      <div className="img-name" style={{ textAlign: 'center', marginTop: '8px' }}>{name}</div>
+      <div className="img-name" >{name}</div>
     </div>
   );
 }
