@@ -34,11 +34,7 @@ export default function Professional() {
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
       <br />
       <Container maxWidth="md" style={{ marginTop: 16}}>
-<<<<<<< HEAD
-        <Grid container spacing={3} >
-=======
-        <Grid container spacing={0.5} style={{ marginRight: 'auto', marginLeft: 'auto'}}>
->>>>>>> 265dd85ea92853e396766af824b248d45b90eb5c
+        <Grid container spacing={3} className="gridContainer">
           {videoGrid.map((row) =>
             row.map((vidData, idx) => (
               <Grid key={idx} item xs={12} sm={4}  >
