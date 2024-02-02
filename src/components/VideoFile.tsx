@@ -56,7 +56,7 @@ export default function VideoFile({
                     style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
         </Link>
-      </Paper>
+      </Paper> 
       <div className="img-name" style={{ textAlign: 'center', marginTop: '8px' }}>{name}</div>
     </div>
   );
