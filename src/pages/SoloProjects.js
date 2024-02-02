@@ -34,7 +34,7 @@ export default function Solo() {
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
       <br />
       <Container maxWidth="md" style={{ marginTop: 0}}>
-        <Grid container spacing={3} style={{ marginRight: 'auto', marginLeft: 'auto'}}>
+        <Grid container spacing={3} className="gridContainer">  
           {videoGrid.map((row) =>
             row.map((vidData, idx) => (
               <Grid key={idx} item xs={12} sm={4}>

@@ -31,8 +31,23 @@ export default function VideoFile({
     <div>
       <Paper
         elevation={3}
-        className="video-paper"
-        sx = {{padding: 0.5, height: 204, width: 200}}
+        className={`video-paper mobile-center`}
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: 0.5,
+          height: 204,
+          width: 200,
+          '@media (max-width: 667px)': {
+            height: 254,
+            width: 250,
+            paddingRight: 0.7,
+            margin: 'auto auto',
+            textAlign: 'center'
+          },
+        }}
         >
             <Link to={url} state={{link}} style={{ textDecoration: 'none' }} onClick={handleVideoClick}>
                 <img
@@ -42,7 +57,7 @@ export default function VideoFile({
                 />
         </Link>
       </Paper>
-      <div className="img-name">{name}</div>
+      <div className="img-name" style={{ textAlign: 'center', marginTop: '8px' }}>{name}</div>
     </div>
   );
 }

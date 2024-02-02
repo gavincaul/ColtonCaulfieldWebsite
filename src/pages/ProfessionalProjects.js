@@ -34,10 +34,10 @@ export default function Professional() {
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
       <br />
       <Container maxWidth="md" style={{ marginTop: 16}}>
-        <Grid container spacing={3} style={{ marginRight: 'auto', marginLeft: 'auto'}}>
+        <Grid container spacing={3} >
           {videoGrid.map((row) =>
             row.map((vidData, idx) => (
-              <Grid key={idx} item xs={12} sm={4}>
+              <Grid key={idx} item xs={12} sm={4}  >
                 <VideoFile {...vidData} />
               </Grid>
             ))
