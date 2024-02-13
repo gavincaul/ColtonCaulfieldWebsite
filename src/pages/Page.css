@@ -232,9 +232,4 @@ body {
         padding-bottom: 0; 
     }
   }
-  @media (min-width: 1024px) {
-    .gridContainer {
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
+  
