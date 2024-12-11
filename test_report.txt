@@ -3,7 +3,7 @@
 > react-scripts test --coverage
 
 PASS src/App.test.js
-  ✓ renders learn react link (37 ms)
+  ✓ renders learn react link (36 ms)
 
 --------------------------|---------|----------|---------|---------|-------------------
 File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
@@ -31,5 +31,5 @@ All files                 |    5.95 |        0 |    7.89 |    6.17 |
 Test Suites: 1 passed, 1 total
 Tests:       1 passed, 1 total
 Snapshots:   0 total
-Time:        3.488 s
+Time:        3.335 s
 Ran all test suites.
