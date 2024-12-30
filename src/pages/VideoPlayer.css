@@ -1,27 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@434&display=swap');
+
 .gradient_background {
     background: linear-gradient(90deg, #010101, #161616);
     min-height: 100vh;
-    min-width: 100v;
+    min-width: 100vw;
+}
+
+.videotitle {
+  font-family: "Outfit", sans-serif;
+  font-size: 30px;
+  letter-spacing: normal;
+  color: white;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  padding-bottom: 2%;
+}
+
+
+.videopadding{
+  padding: 5%;
+}
+
+@media only screen and (max-width: 767px) {
+  .videopadding  {
+      padding: 30%
+  }
+  .videotitle{
+    font-size: 20px;
+  }
 }
 .videoWrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin-top: -69px;
+    height: center;
   }
   
   
   .videoWrapper iframe {
     width: 50%;
-    height: 50%;
+    height: 50vh;
   }
+
+
   @media only screen and (max-width: 767px) {
-    .videoWrapper {
-        margin-top: 50%;
-        max-width: 100%; 
-        width: auto; 
-        height: auto; 
-        padding-bottom: 0; 
+    .videoWrapper iframe {
+        width: 90%;  
+        height: 30vh; 
     }
   }

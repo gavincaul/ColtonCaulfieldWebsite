@@ -11,14 +11,16 @@ export default function VideoPlayer(){
     };
 
     const videoId = extractVideoId(selectedVideoLink);
+    let title = decodeURIComponent(window.location.href.split('/').pop());
     
     return (
         <div className="gradient_background">
-            <NavBar></NavBar>
-            <br></br>
-            <br></br>
-            <br></br>
+        < NavBar />
+        <div className='videopadding'></div> 
+        <div className='videotitle'>
+                {title}</div>
             <div className="videoWrapper">
+                
                 {selectedVideoLink && (
                         <iframe
                             title="YouTube Video"
