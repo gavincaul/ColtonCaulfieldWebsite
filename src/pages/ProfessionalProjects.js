@@ -36,8 +36,7 @@ export default function Professional() {
       <br />
       <br />
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
-      <br />
-      
+      <br />      
       <Container maxWidth="md" style={{ marginTop: 0}} className="gridContainer">
           <Grid container spacing={3} >
             {videoGrid.map((row) =>
@@ -48,6 +47,7 @@ export default function Professional() {
               ))
             )}
           </Grid>
+
       </Container>
     </div>
   );
