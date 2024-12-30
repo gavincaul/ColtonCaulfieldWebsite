@@ -20,8 +20,9 @@ export default function VideoFile({
     
   const { setVideoLink } = useVideoContext();
 
-  let redirect = name;
-  redirect = redirect.replace(/\s+/g, '-');
+  let title = name;
+
+  let redirect = encodeURIComponent(title)
   const url = `/video/${redirect}`;
 
   const handleVideoClick = () => {

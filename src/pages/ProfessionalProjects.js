@@ -6,6 +6,10 @@ import VideoFile from '../components/VideoFile.tsx';
 import './Projects.css';
 import NavBar from '../components/NavBar.tsx';
 
+
+
+
+
 export default function Professional() {
   /*const [videos, setVideos] = useState(VideoList({ page: false }));*/ //Took out filter
   const arrayToGrid = (arr, elementsPerRow) => {
@@ -33,16 +37,17 @@ export default function Professional() {
       <br />
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
       <br />
-      <Container maxWidth="md" style={{ marginTop: 16}}>
-        <Grid container spacing={3} className="gridContainer">
-          {videoGrid.map((row) =>
-            row.map((vidData, idx) => (
-              <Grid key={idx} item xs={12} sm={4}  >
-                <VideoFile {...vidData} />
-              </Grid>
-            ))
-          )}
-        </Grid>
+      
+      <Container maxWidth="md" style={{ marginTop: 0}} className="gridContainer">
+          <Grid container spacing={3} >
+            {videoGrid.map((row) =>
+              row.map((vidData, idx) => (
+                <Grid key={idx} item xs={12} sm={4}  >
+                  <VideoFile {...vidData} />
+                </Grid>
+              ))
+            )}
+          </Grid>
       </Container>
     </div>
   );
