@@ -33,7 +33,7 @@
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
   
-    .video-paper:hover {
+    &:hover {
       transform: scale(1.03);
     }
     .mobile-center {
