@@ -21,7 +21,7 @@ export default function VideoList({page}: VideoListProps) {
         <VideoFile
           name={video.title}
           image={video.img}
-          link={`https://www.youtube.com/watch?v=${video.id}`}
+          link={`https://vimeo.com/${video.id}`}
           release={video.publishedAt}
           popularity={Number(video.viewCount)}
         />
