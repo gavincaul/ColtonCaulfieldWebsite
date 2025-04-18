@@ -44,6 +44,7 @@ export default function Solo() {
           )}
         </Grid>
       </Container>
+      <div style={{ paddingBottom: "5rem" }} />
     </div>
   );
 }
