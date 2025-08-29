@@ -1,11 +1,31 @@
-import React from 'react';
-import NavBar from '../components/NavBar.tsx';
-import './About.css';
+import React, { useState } from "react";
+import NavBar from "../components/NavBar.tsx";
+import "./About.css";
 
 export default function About() {
+  const [visible, setVisible] = useState(false);
+
+  const handleClick = () => {
+    setVisible(true);
+    setTimeout(() => setVisible(false), 1000);
+  };
   return (
     <div className="gradient_background">
       <NavBar></NavBar>
+      <div
+        onClick={handleClick}
+        style={{
+          opacity: visible ? 1 : 0,
+          transition: "opacity 0.3s ease",
+          position: "absolute",
+          left: "20%",
+          top: "80%",
+          color: "white",
+          cursor: "pointer",
+        }}
+      >
+        /___C
+      </div>
       <div className="wrapper">
         <div className="center-content">
           <div className="imgbox img">
@@ -13,16 +33,23 @@ export default function About() {
           </div>
         </div>
         <div className="text-group">
-        Colton Caulfield is a trailer and pitch sizzle editor who has cut for independent filmmakers such as Academy Award-Winning 
-        filmmaker Dorothy Fadiman, as well as larger advertising companies such as Wheelhouse Creative, Stage Six Media, Village 
-        Roadshow, NEON Rated. Whether it be trailers, sizzles, reels, or roundtables, Colton is committed and excited to bring your story to life.
+          Colton Caulfield is a trailer and pitch sizzle editor who has cut for
+          independent filmmakers such as Academy Award-Winning filmmaker Dorothy
+          Fadiman, as well as larger advertising companies such as Wheelhouse
+          Creative, Stage Six Media, Village Roadshow, NEON Rated. Whether it be
+          trailers, sizzles, reels, or roundtables, Colton is committed and
+          excited to bring your story to life.
         </div>
       </div>
       <div className="secab">CONTACT: COLTON.CAULFI@GMAIL.COM</div>
-      <div className="gavin" onClick={() => { window.location.href = 'mailto:gavindcaulfield@gmail.com'; }}>
+      <div
+        className="gavin"
+        onClick={() => {
+          window.location.href = "mailto:gavindcaulfield@gmail.com";
+        }}
+      >
         Site made by Gavin Caulfield
       </div>
     </div>
   );
-};
-
+}
