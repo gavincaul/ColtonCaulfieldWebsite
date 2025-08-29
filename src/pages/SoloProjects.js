@@ -1,10 +1,10 @@
-import { React } from 'react';
-import VideoList from '../components/VideoList.tsx'
-import { Grid, Container } from '@mui/material';
-import VideoFile from '../components/VideoFile.tsx';
+import React, { useState } from "react";
+import VideoList from "../components/VideoList.tsx";
+import { Grid, Container } from "@mui/material";
+import VideoFile from "../components/VideoFile.tsx";
 /*import { Filter } from '../components/Filter.tsx'*/
-import './Projects.css';
-import NavBar from '../components/NavBar.tsx';
+import "./Projects.css";
+import NavBar from "../components/NavBar.tsx";
 
 export default function Solo() {
   /*const [videos, setVideos] = useState(VideoList({ page: false }));*/ //Took out filter
@@ -20,21 +20,37 @@ export default function Solo() {
   };*/
   const videoGrid = arrayToGrid(VideoList({ page: true }), 3);
 
-  
+  const [visible, setVisible] = useState(false);
 
-  
-  
+  const handleClick = () => {
+    setVisible(true);
+    setTimeout(() => setVisible(false), 1000);
+  };
 
   return (
     <div className="gradient_background_projects">
       <NavBar></NavBar>
+      <div
+        onClick={handleClick}
+        style={{
+          opacity: visible ? 1 : 0,
+          transition: "opacity 0.3s ease",
+          position: "absolute",
+          left: "20%",
+          top: "20%",
+          color: "white",
+          cursor: "pointer",
+        }}
+      >
+        /_B__
+      </div>
       <div className="title">Solo Projects</div>
       <br />
       <br />
       {/*<Filter onFilterChange={handleFilterChange}></Filter>*/}
       <br />
-      <Container maxWidth="md" style={{ marginTop: 0}}>
-        <Grid container spacing={3} >  
+      <Container maxWidth="md" style={{ marginTop: 0 }}>
+        <Grid container spacing={3}>
           {videoGrid.map((row) =>
             row.map((vidData, idx) => (
               <Grid key={idx} item xs={12} sm={4} className="gridContainer">
